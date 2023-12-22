@@ -1,33 +1,52 @@
 /* header section*/
 
 header {
-    background-image: url(https://www.autopista.es/uploads/s1/41/48/49/7/imagegallery-46710-5762bd6338683_1_1000x575.jpeg);
+    background-color: rgb(14, 1, 107);
     background-size: cover;
-    width: 100;
+    height: max-content;
+
+}
+.portada0km {
+    width: 100%;
     height: auto;
-
 }
 
-header nav ul li {
+.menuHamburguesa {
+    position: absolute;
+    top: 0;
+    right: 02;
+    width: 100%;
     display: flex;
-    justify-content: left;
-
-    align-items: center;
-    padding: 1px;
-}
-
-header nav ul a {
-    background-color: rgba(201, 201, 216, 0);
+    align-items: center ;
     padding: 10px;
-    color: rgb(246, 239, 239);
-
+    background-color: rgba(9, 57, 99, 0.358);
 }
 
-header nav ul a {
+.menuHamburguesa ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menuHamburguesa li {
+    display: inline;;
+}
+
+.hamburguesa {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.opcionesMenu{
+    position: relative;
+    top: 0;
+    right: 2;
+    width: 100;
     display: flex;
 
 }
-
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -39,10 +58,6 @@ body {
 
 #historia {
     text-align: center;
-}
-
-h2 {
-    text-align: 
 }
 
 .col-md-6 {
@@ -110,6 +125,7 @@ ol {
 }
 
 a {
+    color: white;
     text-decoration: none;
 }
 
