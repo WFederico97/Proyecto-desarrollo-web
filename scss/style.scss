@@ -1,12 +1,16 @@
+
+$colorPrincipal: rgb(14, 1, 107);
+
 header {
-    background-color: rgb(14, 1, 107);
+    background-color: $colorPrincipal;
     background-size: cover;
     height: max-content;
+
 }
 
 .leonLogo {
     position: absolute;
-    align-items: center;
+    align-items:center ;
     padding: auto;
     padding-left: auto;
 }
@@ -19,24 +23,23 @@ header {
 .menuHamburguesa {
     position: absolute;
     top: 0;
-    right: 2;
+    right: 02;
     width: 100%;
     display: flex;
     align-items: center;
     padding: 10px;
     background-color: rgba(9, 57, 99, 0.358);
-}
-
-.menuHamburguesa ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.menuHamburguesa li {
-    display: inline;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+    }
+    li {
+        display: inline;
+        ;
+    }
 }
 
 .hamburguesa {
@@ -51,10 +54,11 @@ header {
     margin-right: 2;
     width: 100;
     display: inline-block;
+
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
 
@@ -72,7 +76,7 @@ body {
 
 .box1 {
     border-top: 100;
-    background-color: rgb(14, 1, 107);
+    background-color: $colorPrincipal;
     border-left: 1cm;
 }
 
@@ -95,12 +99,13 @@ body {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+
 #noticias .box {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
     color: #060606;
-    background-color: rgba(13, 3, 199, 0.1019607843);
+    background-color: #0d03c71a;
 }
 
 .tarjetaNuevos {
@@ -115,8 +120,10 @@ body {
 }
 
 body {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
+
 
 ul,
 ol {
@@ -133,6 +140,7 @@ h1 {
 }
 
 main table {
+
     align-items: center;
     background-color: rgb(5, 5, 165);
 }
@@ -147,7 +155,7 @@ td {
 }
 
 .footerSection {
-    background-color: rgb(14, 1, 107);
+    background-color: $colorPrincipal;
     width: auto;
     height: 400xp;
     position: relative;
@@ -156,11 +164,14 @@ td {
     display: flex;
     padding-top: 20;
     flex-direction: row;
-}
 
-.footerSection ul li {
-    margin-right: 100%;
-    position: initial;
+    ul {
+        li {
+            margin-right: 100%;
+            position: initial;
+        }
+    }
+
 }
 
 #redes {
@@ -173,5 +184,3 @@ td {
     height: 30px;
     position: initial;
 }
-
-/*# sourceMappingURL=style.css.map */
