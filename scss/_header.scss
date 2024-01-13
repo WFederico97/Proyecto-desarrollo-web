@@ -1,0 +1,33 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    height: 800px;
+
+}
+
+.fondo-header {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.fondo-header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('../img/pruebaFondo.avif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,87 +1,195 @@
+@import 'variables';
+@import 'footer';
+@import 'header';
+@import 'mixins';
 
-$colorPrincipal: rgb(14, 1, 107);
-
-header {
-    background-color: $colorPrincipal;
-    background-size: cover;
-    height: max-content;
-
-}
-
-.leonLogo {
-    position: absolute;
-    align-items:center ;
-    padding: auto;
-    padding-left: auto;
-}
-
-.portada0km {
-    width: 100%;
-    height: auto;
-}
-
-.menuHamburguesa {
-    position: absolute;
-    top: 0;
-    right: 02;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: rgba(9, 57, 99, 0.358);
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 20px;
-    }
-    li {
-        display: inline;
-        ;
-    }
-}
-
-.hamburguesa {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.opcionesMenu {
-    list-style: none;
-    position: relative;
-    top: 0;
-    margin-right: 2;
-    width: 100;
-    display: inline-block;
-
-}
 
 body {
-    font-family: 'Poppins', sans-serif;
+    height: 145vh;
+    position: relative;
+    background: linear-gradient(rgb(1, 27, 110)25%,
+            rgb(11, 0, 66)73%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+
+    .portada0km {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 100%;
+        z-index: -1;
+    }
+
+    .menu-conteiner {
+        max-width: relative;
+        position: relative;
+        z-index: 1;
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+
+            .leonLogo {
+                @include centerElement;
+                position: absolute;
+                padding: auto;
+                padding-left: auto;
+            }
+        }
+
+        .navbar ul li {
+            position: initial;
+            float: left;
+
+            a {
+                font-size: 18px;
+                padding: 20px;
+                color: #ffffff;
+                display: flex;
+            }
+
+            a:hover {
+                color: #15a4fe;
+            }
+        }
+    }
+
+#menu {
+    display: inline-block;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .back {
+        padding: 40px 0;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #2a394f;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+}
+
+
+main {
+    background-color: rgba(255, 255, 255, 0);
+
 }
 
 #portada {
-    text-align: left;
+    color: #ffffff;
+    text-align: center;
 }
 
 #historia {
+    color: #ffffff;
+
     text-align: center;
 }
 
 .col-md-6 {
+    color: #fbfafa;
+
+    text-align: center;
+}
+
+.col-md-7 {
+    color: #fbfafa;
+    background-color: $colorPrincipal;
+
     text-align: center;
 }
 
 .box1 {
+    color: #ffffff;
+
     border-top: 100;
     background-color: $colorPrincipal;
     border-left: 1cm;
 }
 
 .titulo {
+    text-align: center;
     position: inherit;
+    color: #090000;
+
 }
 
 #taller {
@@ -90,6 +198,7 @@ body {
 }
 
 .tarjteServicio {
+    background-color: #0e06a6b9;
     border: 0px solid #0d0000;
     border-radius: 8px;
     padding: 16px;
@@ -99,16 +208,27 @@ body {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+#noticias {
+    h2 {
+        color: #fbf9f9;
+        text-align: center;
+        background-color: $colorPrincipal;
+
+    }
+
+}
 
 #noticias .box {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-    color: #060606;
-    background-color: #0d03c71a;
+    color: #000000;
+    background-color: #2e2e7fb9;
 }
 
 .tarjetaNuevos {
+    background-color: #bbb8e423;
+
     display: inline-block;
     text-align: center;
     border: px solid #0d0000;
@@ -119,10 +239,14 @@ body {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+.imagen1Service {
+    width: 100%;
 }
+
+.imagenNoticias1 {
+    width: 100%
+}
+
 
 
 ul,
@@ -131,7 +255,7 @@ ol {
 }
 
 a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -154,29 +278,10 @@ td {
     background-color: rgb(243, 237, 237);
 }
 
-.footerSection {
-    background-color: $colorPrincipal;
-    width: auto;
-    height: 400xp;
-    position: relative;
-    text-align: right;
-    padding: 10px;
-    display: flex;
-    padding-top: 20;
-    flex-direction: row;
+.contacto {
+    color: white;
+    text-align: center;
 
-    ul {
-        li {
-            margin-right: 100%;
-            position: initial;
-        }
-    }
-
-}
-
-#redes {
-    flex: auto;
-    flex-direction: column;
 }
 
 #desplegable {

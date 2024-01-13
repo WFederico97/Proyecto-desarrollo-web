@@ -11,34 +11,31 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <title>Peugeot - Consecionario oficial</title>
 </head>
 
 <body>
-    <header>
-
-        <img class="leonLogo" src="img/leonTransparente.webp" alt="Logo de Peugeot">
-        <img class="portada0km" src="../img/portada0km.avif" alt="Portada 0km">
-
-        <nav class="menuHamburguesa">
-            <div class="hamburguesa" id="hamburguesaIcono">&#9776;</div>
-            <ul class="opcionesMenu">
-                <li class="nave"><a href="index.html">Home</a></li>
-                <li class="nave"><a href="pages/nuevos.html">Nuevos</a></li>
-                <li class="nave"><a href="pages/usados.html">Usados</a></li>
-                <li class="nave"><a href="pages/service.html">Service</a></li>
-                <li class="nave"><a href="pages/administracion.html">Administracion</a></li>
-            </ul>
+    <header class="fondo-header">
+        <a href="index.html" class="logo">
+            <img src="img/leonTransparente.webp" alt="Logo de la empresa">
+            <h2 class="nombre-empresa">Peugeot Argentina</h2>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pages/nuevos.html">Nuevos</a>
+            <a href="pages/usados.html">Usados</a>
+            <a href="pages/service.html">Service</a>
+            <a href="pages/administracion.html">Administracion</a>
         </nav>
+
     </header>
 
     <main>
         <section id="portada">
-            <h1>
-                Peugeot Concesionario Oficial
-            </h1>
+            <h2>Peugeot Concesionario Oficial</h2>
             <p>
                 Te presentamos nuestros vehículos y servicios en conjunto. ¡Te deseamos una agradable visita!
             </p>
@@ -76,7 +73,7 @@
 
 
             <div class="tarjteServicio">
-                <img src="img/galeria0km-1.jpg" alt="Imagen Service" width="100%">
+                <img src="img/galeria0km-1.jpg" alt="Imagen Service" class="imagen1Service">
                 <h3>Service 10.000 kms</h3>
                 <p>
                     Si estás en los 10.000 kms, te recordamos que debes realizar el primer service par el
@@ -87,7 +84,7 @@
             </div>
 
             <div class="tarjteServicio">
-                <img src="img/galeria0km-3.jpg" alt="Imagen Service" width="100%">
+                <img src="img/galeria0km-3.jpg" alt="Imagen Service" class="imagen1Service">
                 <h3>Control de la Distribucion</h3>
                 <p>
                     Si lo que estás necesitando es el service de recambio de la distribucion, o solo
@@ -98,7 +95,7 @@
             </div>
 
             <div class="tarjteServicio">
-                <img src="img/galeria0km-2.jpg" alt="Imagen Service" width="100%">
+                <img src="img/galeria0km-2.jpg" alt="Imagen Service" class="imagen1Service">
                 <h3>Reparacion de chapa y pintura</h3>
                 <p>
                     Aqui encontrarás a los mayores expertos en el tratamiento de la chapa y la pintura de tu
@@ -109,14 +106,15 @@
             </div>
         </section>
 
-        <h2>
-            Ultimas Noticias de la Marca
-        </h2>
+
 
         <section id="noticias">
+            <h2>
+                Ultimas Noticias de la Marca
+            </h2>
             <div class="box">
                 <div class="imagenBox">
-                    <img src="../img/noticias1.jpg" alt="Imagen Noticias" width="300">
+                    <img src="../img/noticias1.jpg" alt="Imagen Noticias" class="imagenNoticias1">
                 </div>
                 <div class="detailBox">
                     <h5>
@@ -133,15 +131,15 @@
                         modelos
                         para que no estén afectados por la primera o la segunda escala del impuesto.
                     </p>
-                    <a
-                        href="https://autotest.com.ar/noticias/3-modelos-de-peugeot-que-cuestan-lo-mismo-para-no-pagar-impuesto-al-lujo/">
+                    <a href="https://autotest.com.ar/noticias/3-modelos-de-peugeot-que-cuestan-lo-mismo-para-no-pagar-impuesto-al-lujo/"
+                        target="_blank">
                         Leer Mas
                     </a>
                 </div>
             </div>
             <div class="box">
                 <div class="imagenBox">
-                    <img src="img/3008E.jpg" width="300" alt=" a">
+                    <img src="img/3008E.jpg" alt="Imagen Noticias" class="imagenNoticias1">
                 </div>
                 <div class="detailBox">
                     <h5>
@@ -157,57 +155,59 @@
                         participar
                         del test drive para la prensa internacional, que se realizará en 2024.
                     </p>
-                    <a href="https://insideevs.com.ar/news/677087/peugeot-e-3008-primera-foto/">
+                    <a href="https://insideevs.com.ar/news/677087/peugeot-e-3008-primera-foto/" target="_blank">
                         Leer Mas
                     </a>
                 </div>
 
             </div>
-
-
-            </div>
-
-
-
-            </div>
-
-
     </main>
 
     <footer class="footerSection">
 
-        <iframe
+        <iframe class="mapaUbicacion"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8098.426572944247!2d-64.27221606920526!3d-31.414981904274438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298c95ab9728b%3A0xa946f51d4f2f3fc9!2sAvant%20Peugeot%20Concesionario%20Oficial!5e0!3m2!1ses-419!2sit!4v1699807320335!5m2!1ses-419!2sit"
-            width="400" height="450" style="border: 10px;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <ul>
-            <li>
-                <a href="https://www.instagram.com">
-                    <img width="50" src="img/logoInsta.jpg" alt="Logo Instagram">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com">
-                    <img width="50" src="img/logoFace.jpg" alt="Logo Facebook">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.whatsapp.com">
-                    <img width="50" src="img/logoWhatsapp.png" alt="Logo Whatsapp">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.meta.com">
-                    <img width="50" src="img/logoTwitter.png" alt="Logo Meta">
-                </a>
-            </li>
-        </ul>
+        <div class="footer-contenedor">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h5>Nuestros Horarios:</h5>
+                    <h4>
+                        Area comercial
+                    </h4>
 
+                    <p class="mb-0">
+                    lun-vier 8:30 a 19:30 <br>
+                    sab 9:00 a 18:30 <br>
+                    dom y feriados cerrado</p>
+                </div>
 
+                <div class="footer-links">
+                    <h5>Nuestros Horarios:</h5>
+                    <h4>
+                        administracion y taller
+                    </h4>
+                    <p class="mb-0">
+                    lun-vier 8:30 a 19:30 <br>
+                    sab 9:00 a 13:00 <br>
+                    dom y feriados cerrado</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Siguenos</h4>
+                    <p>
+                        <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
     </footer>
-
-
 </body>
 
 </html>
+

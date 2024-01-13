@@ -1,177 +1,340 @@
+.footerSection {
+  background-color: rgb(14, 1, 107);
+  width: 100%;
+  height: 400xp;
+  position: relative;
+  text-align: left;
+  padding: 80px 0;
+  display: flex;
+  padding-top: 20;
+  flex-direction: column-reverse;
+}
+.footerSection .mapaUbicacion {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.footerSection .footer-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footerSection .footer-contenedor .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footerSection .footer-contenedor .footer-row .footer-links {
+  width: 25%;
+  height: 0%;
+  padding: 15px;
+}
+.footerSection .footer-contenedor .footer-row .footer-links .social-link {
+  width: 25px;
+  height: auto;
+  margin-right: 10px;
+}
+.footerSection .footer-contenedor .footer-row .footer-links h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #00c3ff;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.footerSection .footer-contenedor .footer-row .footer-links p {
+  color: white;
+}
+.footerSection .footer-contenedor .footer-row .footer-links h5 {
+  color: #ffffff;
+}
+
 header {
-    background-color: rgb(14, 1, 107);
-    background-size: cover;
-    height: max-content;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  height: 800px;
 }
 
-.leonLogo {
-    position: absolute;
-    align-items: center;
-    padding: auto;
-    padding-left: auto;
+.fondo-header {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
 }
 
-.portada0km {
-    width: 100%;
-    height: auto;
-}
-
-.menuHamburguesa {
-    position: absolute;
-    top: 0;
-    right: 2;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: rgba(9, 57, 99, 0.358);
-}
-
-.menuHamburguesa ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.menuHamburguesa li {
-    display: inline;
-}
-
-.hamburguesa {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.opcionesMenu {
-    list-style: none;
-    position: relative;
-    top: 0;
-    margin-right: 2;
-    width: 100;
-    display: inline-block;
+.fondo-header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../img/pruebaFondo.avif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
+  height: 145vh;
+  position: relative;
+  background: linear-gradient(rgb(1, 27, 110) 25%, rgb(11, 0, 66) 73%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+  margin-right: 10px;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+}
+.portada0km {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+  z-index: -1;
+}
+
+.menu-conteiner {
+  max-width: relative;
+  position: relative;
+  z-index: 1;
+}
+.menu-conteiner .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.menu-conteiner .logo .leonLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: auto;
+  padding-left: auto;
+}
+.menu-conteiner .navbar ul li {
+  position: initial;
+  float: left;
+}
+.menu-conteiner .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #ffffff;
+  display: flex;
+}
+.menu-conteiner .navbar ul li a:hover {
+  color: #15a4fe;
+}
+
+#menu {
+  display: inline-block;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .menu {
+    padding: 30px;
+  }
+  .menu label {
+    display: initial;
+  }
+  .back {
+    padding: 40px 0;
+  }
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #2a394f;
+    display: none;
+  }
+  .menu .navbar ul li {
+    width: 100%;
+  }
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+}
+main {
+  background-color: rgba(255, 255, 255, 0);
 }
 
 #portada {
-    text-align: left;
+  color: #ffffff;
+  text-align: center;
 }
 
 #historia {
-    text-align: center;
+  color: #ffffff;
+  text-align: center;
 }
 
 .col-md-6 {
-    text-align: center;
+  color: #fbfafa;
+  text-align: center;
+}
+
+.col-md-7 {
+  color: #fbfafa;
+  background-color: rgb(14, 1, 107);
+  text-align: center;
 }
 
 .box1 {
-    border-top: 100;
-    background-color: rgb(14, 1, 107);
-    border-left: 1cm;
+  color: #ffffff;
+  border-top: 100;
+  background-color: rgb(14, 1, 107);
+  border-left: 1cm;
 }
 
 .titulo {
-    position: inherit;
+  text-align: center;
+  position: inherit;
+  color: #090000;
 }
 
 #taller {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .tarjteServicio {
-    border: 0px solid #0d0000;
-    border-radius: 8px;
-    padding: 16px;
-    text-align: center;
-    margin: 16px;
-    max-width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: rgba(14, 6, 166, 0.7254901961);
+  border: 0px solid #0d0000;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  margin: 16px;
+  max-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#noticias h2 {
+  color: #fbf9f9;
+  text-align: center;
+  background-color: rgb(14, 1, 107);
 }
 
 #noticias .box {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    color: #060606;
-    background-color: rgba(13, 3, 199, 0.1019607843);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  color: #000000;
+  background-color: rgba(46, 46, 127, 0.7254901961);
 }
 
 .tarjetaNuevos {
-    display: inline-block;
-    text-align: center;
-    border: px solid #0d0000;
-    border-radius: 28px;
-    padding: 10px;
-    margin: 5px;
-    max-width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: rgba(187, 184, 228, 0.137254902);
+  display: inline-block;
+  text-align: center;
+  border: px solid #0d0000;
+  border-radius: 28px;
+  padding: 10px;
+  margin: 5px;
+  max-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-body {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.imagen1Service {
+  width: 100%;
+}
+
+.imagenNoticias1 {
+  width: 100%;
 }
 
 ul,
 ol {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 main table {
-    align-items: center;
-    background-color: rgb(5, 5, 165);
+  align-items: center;
+  background-color: rgb(5, 5, 165);
 }
 
 .preciosNuevos {
-    align-items: center;
+  align-items: center;
 }
 
 main table th,
 td {
-    background-color: rgb(243, 237, 237);
+  background-color: rgb(243, 237, 237);
 }
 
-.footerSection {
-    background-color: rgb(14, 1, 107);
-    width: auto;
-    height: 400xp;
-    position: relative;
-    text-align: right;
-    padding: 10px;
-    display: flex;
-    padding-top: 20;
-    flex-direction: row;
-}
-
-.footerSection ul li {
-    margin-right: 100%;
-    position: initial;
-}
-
-#redes {
-    flex: auto;
-    flex-direction: column;
+.contacto {
+  color: white;
+  text-align: center;
 }
 
 #desplegable {
-    width: 400px;
-    height: 30px;
-    position: initial;
+  width: 400px;
+  height: 30px;
+  position: initial;
 }
 
 /*# sourceMappingURL=style.css.map */
