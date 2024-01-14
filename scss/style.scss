@@ -54,54 +54,54 @@ nav a:hover {
 }
 
 
-    .portada0km {
-        position: fixed;
+.portada0km {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    z-index: -1;
+}
+
+.menu-conteiner {
+    max-width: relative;
+    position: relative;
+    z-index: 1;
+
+    .logo {
+        position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        max-height: 100%;
-        z-index: -1;
-    }
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
 
-    .menu-conteiner {
-        max-width: relative;
-        position: relative;
-        z-index: 1;
-
-        .logo {
+        .leonLogo {
+            @include centerElement;
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            z-index: 1000;
-
-            .leonLogo {
-                @include centerElement;
-                position: absolute;
-                padding: auto;
-                padding-left: auto;
-            }
-        }
-
-        .navbar ul li {
-            position: initial;
-            float: left;
-
-            a {
-                font-size: 18px;
-                padding: 20px;
-                color: #ffffff;
-                display: flex;
-            }
-
-            a:hover {
-                color: #15a4fe;
-            }
+            padding: auto;
+            padding-left: auto;
         }
     }
+
+    .navbar ul li {
+        position: initial;
+        float: left;
+
+        a {
+            font-size: 18px;
+            padding: 20px;
+            color: #ffffff;
+            display: flex;
+        }
+
+        a:hover {
+            color: #15a4fe;
+        }
+    }
+}
 
 #menu {
     display: inline-block;
@@ -195,58 +195,129 @@ main {
 #taller {
     display: flex;
     justify-content: space-around;
+
+    .tarjteServicio {
+        flex: 50%;
+        display: flex;
+        flex-direction: column;
+        background-color: #0e06a6b9;
+        border: 0px solid #0d0000;
+        border-radius: 8px;
+        text-align: center;
+        margin: 16px;
+        max-width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+        .contenidoTarjeta {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .botonTarjeta {
+            background-color: rgba(9, 1, 71, 0.51);
+            padding: 10px;
+        }
+    }
+
 }
 
-.tarjteServicio {
-    background-color: #0e06a6b9;
-    border: 0px solid #0d0000;
-    border-radius: 8px;
-    padding: 16px;
-    text-align: center;
-    margin: 16px;
-    max-width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
 
 #noticias {
     h2 {
         color: #fbf9f9;
         text-align: center;
         background-color: $colorPrincipal;
+    }
 
+    .box {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        color: #000000;
+        background-color: #2e2e7fb9;
+
+        .imagenBox {
+            .imagenNoticias1 {
+                width: 100%
+            }
+        }
     }
 
 }
 
-#noticias .box {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    color: #000000;
-    background-color: #2e2e7fb9;
+.tituloNuevos {
+    color: white;
 }
-
 .tarjetaNuevos {
+    width: 300;
+    height: 200;
+    flex: 50;
+    display: inline-flex;
+    flex-direction: column;
     background-color: #bbb8e423;
-
-    display: inline-block;
+    border: 0px solid #0d0000;
+    border-radius: 8px;
     text-align: center;
-    border: px solid #0d0000;
-    border-radius: 28px;
-    padding: 10px;
-    margin: 5px;
+    margin: 15px;
     max-width: 300px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    .contenidoTarjNuevos {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .botonTarjNuevos {
+        background-color: rgb(14, 1, 107);
+        padding: 1px;
+    }
 }
 
+.tituloAdministracion{
+    color: white;
+    text-align: center;
+}
+.contenidoAdministracion{
+    color: white;
+    text-align: center;
+}
+.linkAdministracion{
+    text-align: center;
+    text-decoration-line: underline;
+    background-color: #bbb8e423;
+    border: 0px solid #0d0000;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30;
+}
+.contacto {
+    width: 300;
+    flex: 50;
+    display: flex;
+    flex-direction: column;
+    color: rgb(12, 12, 12);
+    border: 0px solid #0d0000;
+    border-radius: 8px;
+
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
 .imagen1Service {
     width: 100%;
 }
 
-.imagenNoticias1 {
-    width: 100%
+.tituloUsados {
+    text-align: center;
+    color: white;
 }
-
+.c {
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    display:flex;
+    margin: 30px;
+}
 
 
 ul,
@@ -269,7 +340,7 @@ main table {
     background-color: rgb(5, 5, 165);
 }
 
-.preciosNuevos {
+#preciosNuevos {
     align-items: center;
 }
 
@@ -278,11 +349,7 @@ td {
     background-color: rgb(243, 237, 237);
 }
 
-.contacto {
-    color: white;
-    text-align: center;
 
-}
 
 #desplegable {
     width: 400px;
