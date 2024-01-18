@@ -1,14 +1,38 @@
 header {
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    height: 800px;
+    height: 600px;
+    background: #2c3e50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #244e7d2a, #2c3e5053), url(../imagenes/2008.avif);
+    background: linear-gradient(to right, #244e7d2a, #2c3e5091), url(../imagenes/2008.avif);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 
+    .textos-header {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        height: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        h1 {
+            font-size: 50px;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 300;
+            color: #ffffff;
+            text-align: center;
+        }
+    }
 }
 
 .fondo-header {
@@ -30,4 +54,37 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+.logo {
+    text-align: center;
+    padding: 30px 50px 0 0;
+}
+
+nav a {
+    color: white;
+    font-weight: 300;
+    /*mas ligera*/
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
 }
