@@ -153,56 +153,6 @@ a {
   color: rgb(255, 255, 255);
 }
 
-/*0
-.portada0km {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-height: 100%;
-    z-index: -1;
-}
-
-.menu-conteiner {
-    max-width: relative;
-    position: relative;
-    z-index: 1;
-
-    .logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        z-index: 1000;
-
-        .leonLogo {
-            @include centerElement;
-            position: absolute;
-            padding: auto;
-            padding-left: auto;
-        }
-    }
-
-    .navbar ul li {
-        position: initial;
-        float: left;
-
-        a {
-            font-size: 18px;
-            padding: 20px;
-            color: #ffffff;
-            display: flex;
-        }
-
-        a:hover {
-            color: #15a4fe;
-        }
-    }
-}
-*/
 .contenedor-sobre-nosotros {
   display: flex;
   justify-content: space-evenly;
@@ -405,6 +355,36 @@ main {
   padding: 1px;
 }
 
+.tituloUsados {
+  color: white;
+}
+.tituloUsados h2 {
+  color: black;
+}
+
+.tarjetaUsados {
+  width: 300;
+  height: 200;
+  flex: 50;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: rgba(187, 184, 228, 0.137254902);
+  border: 0px solid #0d0000;
+  border-radius: 8px;
+  text-align: center;
+  margin: 15px;
+  max-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.tarjetaUsados .contenidoTarjUsados {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.tarjetaUsados .botonTarjUsados {
+  background-color: rgb(14, 1, 107);
+  padding: 1px;
+}
+
 .titulo-administracion {
   color: rgb(0, 0, 0);
   text-align: center;
@@ -426,7 +406,7 @@ main {
   padding: 30;
 }
 
-.contactanos-administracion {
+.contactanos {
   text-align: center;
 }
 
