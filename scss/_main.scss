@@ -1,0 +1,113 @@
+//*Main**/
+
+main {
+  padding: 50px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  .contenedor-sobre-nosotros {
+    .titulo {
+      text-align: center;
+      margin: 50px 0;
+    }
+    .sobre-nosotros {
+      display: flex;
+      justify-content: space-evenly;
+      .imagen-about-us {
+        width: 48%;
+      }
+      .contenido-textos {
+        display: flex;
+        align-items: center;
+        width: 48%;
+        p {
+          text-align: justify;
+          font-size: 22px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  #taller {
+    .titulo {
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    .containerTarjetas {
+      display: flex;
+      flex-direction: row;
+      .tarjetaServicio {
+        flex: 50%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(14, 6, 166, 0.7254901961);
+        border: 0px solid #0d0000;
+        border-radius: 8px;
+        text-align: center;
+        margin: 16px;
+        max-width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        .imagenService {
+          width: 100%;
+          height: 16rem;
+        }
+        .contenidoTarjeta {
+          flex-grow: 1;
+          flex-shrink: 1;
+          p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+        }
+        .botonTarjeta {
+          background-color: rgba(9, 1, 71, 0.51);
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  #noticias {
+    .titulo {
+      text-align: center;
+      padding: 60px 0;
+    }
+    .noticiasBox {
+      height: 45vh;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      color: #000000;
+      background-color: rgba(46, 46, 127, 0.7254901961);
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      margin: 1em;
+      .imagenBox {
+        display: flex;
+        justify-content: space-evenly;
+        .imagenNoticias {
+          width: 15rem;
+        }
+      }
+      .detailBox {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        p,
+        h5 {
+          margin: 1em;
+          margin-bottom: 15px;
+        }
+        a{
+          padding-left: 2em;
+        }
+      }
+    }
+  }
+}

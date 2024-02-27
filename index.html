@@ -10,14 +10,13 @@
         content="Descubre la amplia gama de modelos Peugeot en nuestra agencia de autos. Encuentra vehículos elegantes, eficientes y llenos de tecnología. Explora nuestras ofertas en autos nuevos y usados, así como servicios de mantenimiento de alta calidad. ¡Visita nuestra agencia y experimenta la conducción con estilo y rendimiento Peugeot!">
     <meta name="keywords"
         content="Peugeot, ventas de autos, concesionario Peugeot, vehículos nuevos, vehículos usados, financiamiento de autos, ofertas de Peugeot">
+    <link rel="stylesheet" href="./scss/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <title>Peugeot - Consecionario oficial</title>
 </head>
@@ -27,7 +26,7 @@
         <a href="index.html" class="logo">
             <img src="img/leonTransparente.webp" alt="Logo de la empresa">
         </a>
-        <nav>
+        <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="pages/nuevos.html">Nuevos</a>
             <a href="pages/usados.html">Usados</a>
@@ -45,9 +44,9 @@
     </header>
 
     <main>
-        <section class="contenedor sobre-nosotros">
+        <section class="contenedor-sobre-nosotros">
             <h2 class="titulo">Acerca de Nosotros</h2>
-            <div class="contenedor-sobre-nosotros">
+            <div class="sobre-nosotros">
                 <img src="img/logoHistoria.jpg" alt="logo historia" class="imagen-about-us">
                 <div class="contenido-textos">
                     <p>
@@ -61,70 +60,80 @@
             </div>
         </section>
 
-        <h2 class="titulo">
-            Post Venta / Taller
-        </h2>
 
         <section id="taller">
+            <h2 class="titulo">
+                Post Venta / Taller
+            </h2>
+            <div class="containerTarjetas">
 
+                <div class="tarjetaServicio">
 
-            <div class="tarjteServicio">
-                <img src="img/galeria0km-1.jpg" alt="Imagen Service" class="imagen1Service">
-                <div class="contenidoTarjeta">
-                    <h3>Service 10.000 kms</h3>
-                    <p>
-                        Si estás en los 10.000 kms, te recordamos que debes realizar el primer service par el
-                        cuidado y control de tu vehículo.
-                        Te recordamos tambien, debes hacerlo si ya ha transcurrido 1 año de la compra.
-                    </p>
-                </div>
-                <div class="botonTarjeta">
-                    <button>Consultanos</button>
-                </div>
+                    <img src="img/galeria0km-1.jpg" alt="Imagen Service" class="imagenService">
 
-            </div>
+                    <div class="contenidoTarjeta">
+                        <h3>Service 10.000 kms</h3>
+                        <p>
+                            Si estás en los 10.000 kms, te recordamos que debes realizar el primer service par el
+                            cuidado y control de tu vehículo.
+                            Te recordamos tambien, debes hacerlo si ya ha transcurrido 1 año de la compra.
+                        </p>
+                    </div>
 
-            <div class="tarjteServicio">
-                <img src="img/galeria0km-3.jpg" alt="Imagen Service" class="imagen1Service">
-                <div class="contenidoTarjeta">
-                    <h3>Control de la Distribucion</h3>
-                    <p>
-                        Si lo que estás necesitando es el service de recambio de la distribucion, o solo
-                        necesitas un control de la misma, te esperamos en nuestros talleres oficiales, para
-                        pasar un buen momento
-                    </p>
+                    <div class="botonTarjeta">
+                        <button>Consultanos</button>
+                    </div>
+
                 </div>
 
-                <div class="botonTarjeta">
-                    <button>Consultanos</button>
-                </div>
-            </div>
+                <div class="tarjetaServicio">
+                    <img src="img/galeria0km-3.jpg" alt="Imagen Service" class="imagenService">
+                    <div class="contenidoTarjeta">
+                        <h3>Control de la Distribucion</h3>
+                        <p>
+                            Si lo que estás necesitando es el service de recambio de la distribucion, o solo
+                            necesitas un control de la misma, te esperamos en nuestros talleres oficiales, para
+                            pasar un buen momento
+                        </p>
+                    </div>
 
-            <div class="tarjteServicio">
-                <img src="img/galeria0km-2.jpg" alt="Imagen Service" class="imagen1Service">
-                <div class="contenidoTarjeta">
-                    <h3>Reparacion de chapa y pintura</h3>
-                    <p>Aqui encontrarás a los mayores expertos en el tratamiento de la chapa y la pintura de tuvehiculo,
-                        cualquier tipo de arreglos que debas hacerlo, te garantizamos que queda igual a 0km! te
-                        esperamos en nuestro taller.</p>
+                    <div class="botonTarjeta">
+                        <button>Consultanos</button>
+                    </div>
                 </div>
 
-                <div class="botonTarjeta">
-                    <button>Consultanos</button>
+                <div class="tarjetaServicio">
+                    <img src="img/galeria0km-2.jpg" alt="Imagen Service" class="imagenService">
+                    <div class="contenidoTarjeta">
+                        <h3>Reparacion de chapa y pintura</h3>
+                        <p>Aqui encontrarás a los mayores expertos en el tratamiento de la chapa y la pintura de
+                            tuvehiculo,
+                            cualquier tipo de arreglos que debas hacerlo, te garantizamos que queda igual a 0km! te
+                            esperamos en nuestro taller.</p>
+                    </div>
+
+                    <div class="botonTarjeta">
+                        <button>Consultanos</button>
+                    </div>
                 </div>
+
             </div>
         </section>
 
 
 
         <section id="noticias">
-            <h2>
+
+            <h2 class="titulo">
                 Ultimas Noticias de la Marca
             </h2>
-            <div class="box">
+
+            <div class="noticiasBox">
+
                 <div class="imagenBox">
-                    <img src="../img/noticias1.jpg" alt="Imagen Noticias" class="imagenNoticias1">
+                    <img src="../img/noticias1.jpg" alt="Imagen Noticias" class="imagenNoticias">
                 </div>
+
                 <div class="detailBox">
                     <h5>
                         LOS 3 MODELOS DE PEUGEOT QUE CUESTAN LO MISMO PARA NO PAGAR «IMPUESTO AL LUJO»
@@ -146,9 +155,9 @@
                     </a>
                 </div>
             </div>
-            <div class="box">
+            <div class="noticiasBox">
                 <div class="imagenBox">
-                    <img src="img/3008E.jpg" alt="Imagen Noticias" class="imagenNoticias1">
+                    <img src="img/3008E.jpg" alt="Imagen Noticias" class="imagenNoticias">
                 </div>
                 <div class="detailBox">
                     <h5>

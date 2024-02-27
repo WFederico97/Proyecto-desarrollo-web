@@ -1,0 +1,62 @@
+@media screen and (min-width: 322px) and (max-width: 700px) {
+  .fondo-header {
+    .navbar {
+      font-size: 0.7em;
+      text-align: center;
+      padding: 1em 0 0 0;
+    }
+    .textos-header {
+      h1 {
+        font-size: 25px;
+      }
+    }
+  }
+  .fondo-header::before {
+    background-size: cover;
+    height: 100vh;
+  }
+
+  main {
+    .contenedor-sobre-nosotros {
+      width: 90vw;
+      .sobre-nosotros {
+        flex-direction: column;
+        align-items: center;
+        .imagen-about-us {
+          height: 14rem;
+          width: 21rem;
+        }
+        .contenido-textos {
+            margin: 1em;
+          text-align: justify;
+          width: 80vw;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .containerTarjetas {
+      flex-wrap: wrap;
+      justify-content: center;
+      .tarjetaServicio {
+        width: 90%;
+        margin: 1em;
+      }
+    }
+
+    #noticias {
+      display: flex;
+      flex-direction: column;
+      .noticiasBox {
+        height: 85vh;
+        flex-wrap: wrap;
+        .imagenBox {
+          .imagenNoticias {
+            width: 82.5vw;
+            height: 10rem;
+          }
+        }
+      }
+    }
+  }
+}
